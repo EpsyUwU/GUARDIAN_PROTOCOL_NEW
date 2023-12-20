@@ -10,6 +10,7 @@ import {
   Image,
   Box
 } from "@chakra-ui/react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { Section2 } from "./Section2";
@@ -19,7 +20,14 @@ import { Section5 } from "./Section5";
 import { Section4 } from "./Section4";
 import DotGrid from "../../assets/images/DotGrid.png"
 
+
+
+
 function Main() {
+  useEffect(() => {
+    document.documentElement.style.setProperty('--background-color', '#F8AD18');
+  }, []);
+
   return (
     <>
       <GridItem h="650px" w="100%" bg="#F8AD18">
@@ -39,7 +47,7 @@ function Main() {
                   <HStack>
                     <Button
                       as={Link}
-                      to="/main"
+                      to="/home"
                       size="lg"
                       borderRadius="10"
                       backgroundColor="black"

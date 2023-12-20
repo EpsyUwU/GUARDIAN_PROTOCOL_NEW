@@ -1,21 +1,15 @@
+:root {
+  --background-color: #131111;
+}
 
 #root {
-  max-width: 1400px;
+  max-width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 16px;
   display: flex;
   flex-direction: column;
   box-sizing: content-box;
-  background:#F8AD18 !important; 
-  color: white;
-}
-
-
-body {
-  background: #F8AD18 !important;
-  background-size: 200% 200%;
-  animation: gradientAnimation 5s linear infinite;
+  background: var(--background-color) !important; 
   color: white;
 }
 
